@@ -1,0 +1,48 @@
+@import "./navbar.css";
+@import "./footer.css";
+
+.promo-text-heading {
+  color: var(--primary-color);
+}
+.no-style-link {
+  text-decoration: none;
+}
+
+.promotion-container {
+  height: calc(100vh - 15rem);
+}
+.promo-text{
+  width: 70%;
+}
+
+ .promo-text{
+    font-size: 2.4rem;
+ }
+ .promo-data-wrapper{
+   margin-left: 2%;
+ }
+
+@media (max-width: 800px) {
+  
+  .promotion-container {
+    flex-direction: column-reverse;
+  }
+  #promo-img{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+  .promo-data-wrapper{
+    display: block;
+    margin: 0 0 5% 15%;
+  }
+  .promo-text{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px){
+  .promo-text{
+    font-size: 1.8rem;
+  }
+}

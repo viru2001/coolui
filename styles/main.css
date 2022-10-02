@@ -1,0 +1,43 @@
+/* External Imports */
+
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css";
+
+/* utils import */
+@import "./utils.css";
+
+/* components imports */
+
+@import "../components/Alert/alert.css";
+@import "../components/Button/button.css";
+@import "../components/Image/image.css";
+@import "../components/Input/input.css";
+@import "../components/Avatar/avatar.css";
+@import "../components/Badge/badge.css";
+@import "../components/Modal/modal.css";
+@import "../components/List/list.css";
+@import "../components/Navigation/navigation.css";
+@import "../components/Card/card.css";
+@import "../components/Rating/rating.css";
+@import "../components/Grid/grid.css";
+@import "../components/Toast/toast.css";
+@import "../components/Slider/slider.css";
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* reset css */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style: none;
+}

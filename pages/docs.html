@@ -1,0 +1,2815 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cool UI | Docs</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/docs.css" />
+    <link rel="stylesheet" href="../styles/scrollbar.css" />
+  </head>
+  <body>
+    <!-- primary navigation -->
+    <header
+      id="primary-nav"
+      class="header d-flex justify-center align-center p-2 box-shadow-md font-wt-bold"
+    >
+      <div class="d-flex w-100">
+        <h1 class="headline-lg m-3 logo">
+          <a class="brand-name" href="../index.html">Cool UI</a>
+        </h1>
+        <button id="btn-hamburger" class="btn text-md ml-auto mr-8 p-4">
+          <i class="fas fa-bars hamburger-icon"></i>
+        </button>
+      </div>
+      <nav
+        class="ml-auto nav-menu-without-hamburger-icon mr-6"
+        aria-label="primary navigation"
+      >
+        <ul class="d-flex align-center">
+          <li class="text-sm m-3">
+            <a class="primary-nav-link-item nav-link-item" href="../index.html"
+              >Home</a
+            >
+          </li>
+          <li class="text-sm m-3">
+            <a
+              class="primary-nav-link-item nav-link-item font-wt-black primary-nav-active"
+              href="#"
+              >Documention</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!-- hamburger nav menu -->
+      <nav
+        id="nav-menu-hamburger"
+        class="component-nav-hamburg p-sticky d-flex flex-col align-center p-8 d-none mt-4"
+        aria-label="components navigation"
+      >
+        <h2 class="headline-md m-5">Get Started</h2>
+        <ul class="component-nav-list">
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#installation"
+              >Installation</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#typography"
+              >Typography</a
+            >
+          </li>
+        </ul>
+        <h2 class="headline-md m-5">Components</h2>
+        <ul class="component-nav-list">
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#alert"
+              >Alert</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#avatar"
+              >Avatar</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#badge"
+              >Badge</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#button"
+              >Button</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#card"
+              >Card</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#image"
+              >Image</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#input"
+              >Input</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#modal"
+              >Modal</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#list"
+              >List</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#navigation"
+              >Navigation</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#grid"
+              >Grid</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#rating"
+              >Rating</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#toast"
+              >Toast</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#slider"
+              >Slider</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="d-flex">
+      <!-- components navigation -->
+      <nav
+        class="component-nav p-sticky d-flex flex-col align-center nav-menu-without-hamburger-icon"
+        aria-label="components navigation"
+      >
+        <h2 class="headline-md m-5">Get Started</h2>
+        <ul class="component-nav-list">
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#installation"
+              >Installation</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#typography"
+              >Typography</a
+            >
+          </li>
+        </ul>
+        <h2 class="headline-md m-5">Components</h2>
+        <ul class="component-nav-list">
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#alert"
+              >Alert</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#avatar"
+              >Avatar</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#badge"
+              >Badge</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#button"
+              >Button</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#card"
+              >Card</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#image"
+              >Image</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#input"
+              >Input</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#modal"
+              >Modal</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#list"
+              >List</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#navigation"
+              >Navigation</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#grid"
+              >Grid</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#rating"
+              >Rating</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#toast"
+              >Toast</a
+            >
+          </li>
+          <li class="text-sm">
+            <a
+              class="nav-link-item comp-nav-link-item font-wt-semibold"
+              href="#slider"
+              >Slider</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <main>
+        <!-- Installation -->
+        <section class="component-container mt-8" id="installation">
+          <h3 class="headline-lg comp-name">Cool UI</h3>
+          <p class="text-sm mt-5">
+            Build beautiful web interfaces by using Cool UI. It is
+            user-friendly, customizable and it has powerful utility classes.
+          </p>
+          <p class="headline-lg font-wt-bold mt-5">How To Use</p>
+
+          <p class="text-sm my-4">
+            Copy and paste the code given below in the
+            <span class="highlight-text">&lt;head&gt;</span> tag of your html
+            document, above all other style sheets
+          </p>
+
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/6215221f4ef606001531dc81"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <p class="headline-lg font-wt-bold mt-5">How To Customize</p>
+
+          <p class="text-sm my-4">
+            Components can be easily customised. In order to override the base
+            classes, users can add their own class to the pre-existing classes,
+            and style them seperately.
+          </p>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/621529164ef606001531dc83"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+        </section>
+        <hr />
+
+        <!-- Typography -->
+        <section class="component-container mt-8" id="typography">
+          <h3 class="headline-lg comp-name">Typography</h3>
+
+          <!-- Headings -->
+          <p class="headline-md font-wt-bold mt-5">Headings</p>
+          <p class="text-sm my-4">
+            There are five different headings present.You can use them using
+            these classes -
+            <span class="highlight-text">headline-xl</span>,<span
+              class="highlight-text"
+              >headline-lg</span
+            >,<span class="highlight-text">headline-md</span>,<span
+              class="highlight-text"
+              >headline-sm</span
+            >
+            ,<span class="highlight-text">headline-xs</span>
+          </p>
+          <div class="component-wrapper p-8 my-4">
+            <h1 class="headline-xl">Headline 1</h1>
+            <h2 class="headline-lg">Headline 2</h2>
+            <h3 class="headline-md">Headline 3</h3>
+            <h4 class="headline-sm">Headline 4</h4>
+            <h5 class="headline-xs">Headline 5</h5>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/6203b90f234b8a0015700d07"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- Paragraph text  -->
+          <p class="headline-md font-wt-bold mt-5">Paragraph Text</p>
+          <p class="text-sm my-4">
+            There are five different font sizes used for paragraphs.You can use
+            them using these classes -
+            <span class="highlight-text">text-xl</span>,<span
+              class="highlight-text"
+              >text-lg</span
+            >,<span class="highlight-text">text-md</span>,<span
+              class="highlight-text"
+              >text-sm</span
+            >
+            ,<span class="highlight-text">text-xs</span>
+          </p>
+          <div class="component-wrapper p-8 my-4">
+            <p class="text-xl">Paragraph 1</p>
+            <p class="text-lg">Paragraph 2</p>
+            <p class="text-md">Paragraph 3</p>
+            <p class="text-sm">Paragraph 4</p>
+            <p class="text-xs">Paragraph 5</p>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/6203b9a5234b8a0015700d09"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- Gray text  -->
+          <p class="headline-md font-wt-bold mt-5">Gray Text</p>
+          <p class="text-sm my-4">
+            You can make your text color gray using
+            <span class="highlight-text">text-gray</span> class
+          </p>
+          <div class="component-wrapper p-8 my-4">
+            <h2 class="headline-lg text-gray">Headline 2</h2>
+            <p class="text-lg text-gray">Paragraph 2</p>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/6203ba0c234b8a0015700d0a"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- text Alignment  -->
+          <p class="headline-md font-wt-bold mt-5">Text Alignment</p>
+          <p class="text-sm my-4">
+            You can align text to left,center and right by using classes -
+            <span class="highlight-text">text-left</span>,
+            <span class="highlight-text">text-center</span>,
+            <span class="highlight-text">text-right</span>
+          </p>
+          <div class="component-wrapper p-8 my-4">
+            <p class="text-lg text-left">Paragraph 2</p>
+            <p class="text-lg text-center">Paragraph 2</p>
+            <p class="text-lg text-right">Paragraph 2</p>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/6203ba56234b8a0015700d0b"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+        </section>
+        <hr />
+        <!-- components documention -->
+        <!-- Alert -->
+        <section class="component-container mt-8" id="alert">
+          <h3 class="headline-lg comp-name">Alert</h3>
+          <p class="text-sm my-4">
+            An alert displays a short, important message in a way that attracts
+            the user's attention without interrupting the user's task.
+          </p>
+          <p class="text-sm my-4">
+            Alerts are available in 4 different types - primary, error/danger,
+            success and warning
+          </p>
+          <p class="text-sm my-4">
+            To use alerts, add the base class
+            <span class="highlight-text">alert</span> and add any one of the
+            following classes for the different types -
+            <span class="highlight-text">alert-primary</span>,
+            <span class="highlight-text">alert-danger</span>,
+            <span class="highlight-text">alert-success</span>,
+            <span class="highlight-text">alert-warning</span>
+          </p>
+          <!-- simple alert -->
+          <p class="headline-md font-wt-bold mt-5">Simple Alert</p>
+
+          <div class="component-wrapper p-8 my-4">
+            <div class="alert alert-primary text-sm mx-8 p-4 rounded-sm">
+              This is Primary Alert Example
+            </div>
+            <div class="alert alert-danger text-sm mx-8 mt-4 p-4 rounded-sm">
+              This is Danger Alert Example
+            </div>
+            <div class="alert alert-success text-sm mx-8 mt-4 p-4 rounded-sm">
+              This is Success Alert Example
+            </div>
+            <div class="alert alert-warning text-sm mx-8 mt-4 p-4 rounded-sm">
+              This is Warning Alert Example
+            </div>
+          </div>
+
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/61f98ae11e1df4001537946a"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- Alert with icons -->
+          <p class="headline-md font-wt-bold mt-5">Alert with Icons</p>
+
+          <div class="component-wrapper p-8 my-4">
+            <div
+              class="alert alert-primary text-sm mx-8 p-4 rounded-sm d-flex align-center"
+            >
+              <i class="fas fa-info-circle mr-4"></i>This is Primary Alert with
+              icon
+            </div>
+            <div
+              class="alert alert-danger text-sm mx-8 mt-4 p-4 rounded-sm d-flex align-center"
+            >
+              <i class="fas fa-exclamation-triangle mr-4"></i>This is Danger
+              Alert with icon
+            </div>
+            <div
+              class="alert alert-success text-sm mx-8 mt-4 p-4 rounded-sm d-flex align-center"
+            >
+              <i class="fas fa-check-circle mr-4"></i>This is Success Alert with
+              icon
+            </div>
+            <div
+              class="alert alert-warning text-sm mx-8 mt-4 p-4 rounded-sm d-flex align-center"
+            >
+              <i class="fas fa-exclamation-triangle mr-4"></i>This is Warning
+              Alert with icon
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/61f98c941e1df40015379470"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- outlined alert with icons -->
+          <p class="headline-md font-wt-bold mt-5">Outlined Alert with Icons</p>
+
+          <p class="text-sm my-4">
+            To use outlined alerts, add the base class
+            <span class="highlight-text">alert-outlined</span> and add any one
+            of the following classes for the different types -
+            <span class="highlight-text">alert-primary-outlined</span>,
+            <span class="highlight-text">alert-danger-outlined</span>,
+            <span class="highlight-text">alert-success-outlined</span>,
+            <span class="highlight-text">alert-warning-outlined</span>
+          </p>
+
+          <div class="component-wrapper p-8 my-4">
+            <div
+              class="alert alert-outlined alert-primary-outlined text-sm mx-8 p-4 rounded-sm d-flex align-center"
+            >
+              <i class="fas fa-info-circle mr-4"></i>This is Primary outlined
+              Alert with icon
+            </div>
+            <div
+              class="alert alert-outlined alert-danger-outlined text-sm mx-8 mt-4 p-4 rounded-sm d-flex align-center"
+            >
+              <i class="fas fa-exclamation-triangle mr-4"></i>This is Danger
+              outlined Alert with icon
+            </div>
+            <div
+              class="alert alert-outlined alert-success-outlined text-sm mx-8 mt-4 p-4 rounded-sm d-flex align-center"
+            >
+              <i class="fas fa-check-circle mr-4"></i>This is Success outlined
+              Alert with icon
+            </div>
+            <div
+              class="alert alert-outlined alert-warning-outlined text-sm mx-8 mt-4 p-4 rounded-sm d-flex align-center"
+            >
+              <i class="fas fa-exclamation-triangle mr-4"></i>This is Warning
+              outlined Alert with icon
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/61f974861e1df4001537945a"
+            class="code-snippet"
+            frameborder="0"
+          >
+          </iframe>
+        </section>
+        <hr />
+        <!-- Avatars -->
+        <section class="component-container mt-8" id="avatar">
+          <h3 class="headline-lg comp-name">Avatar</h3>
+          <p class="text-sm my-4">
+            An avatar is an image used as a user's profile picture, usually in a
+            circular shape. It is displayed on the user's profile information
+            page.
+          </p>
+
+          <p class="text-sm my-4">
+            Avatars are available in 4 different sizes - extra small (xs), small
+            (sm), medium (md), large (lg) . To use the avatar , add any one of
+            the following classes for the different sizes -
+            <span class="highlight-text">avatar-lg</span>,
+            <span class="highlight-text">avatar-md</span>,
+            <span class="highlight-text">avatar-sm</span>,
+            <span class="highlight-text">avatar-xs</span>
+          </p>
+
+          <!-- image avatars -->
+          <p class="headline-md font-wt-bold mt-5">Image Avatars</p>
+          <div
+            class="component-wrapper p-8 my-4 d-flex justify-around align-end"
+          >
+            <div class="avatar-lg">
+              <img
+                loading="lazy"
+                alt="avatar image"
+                class="img-responsive img-round rounded-full"
+                src="https://i.pravatar.cc?img=2"
+              />
+            </div>
+
+            <div class="avatar-md">
+              <img
+                loading="lazy"
+                alt="avatar image"
+                class="img-responsive img-round rounded-full"
+                src="https://i.pravatar.cc?img=2"
+              />
+            </div>
+            <div class="avatar-sm">
+              <img
+                loading="lazy"
+                alt="avatar image"
+                class="img-responsive img-round rounded-full"
+                src="https://i.pravatar.cc?img=2"
+              />
+            </div>
+            <div class="avatar-xs">
+              <img
+                loading="lazy"
+                alt="avatar image"
+                class="img-responsive img-round rounded-full"
+                src="https://i.pravatar.cc?img=2"
+              />
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/61fd527333c09d0015b44dba"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- text avatars -->
+          <p class="headline-md font-wt-bold mt-5">Text Avatars</p>
+
+          <p class="text-sm my-4">
+            To use text avatars you have to add
+            <span class="highlight-text">avatar-text</span> class
+          </p>
+          <div
+            class="component-wrapper p-8 my-4 d-flex justify-around align-end"
+          >
+            <div
+              class="avatar-lg avatar-text rounded-full text-xl d-flex justify-center align-center"
+            >
+              <span>VF</span>
+            </div>
+            <div
+              class="avatar-md avatar-text rounded-full text-lg d-flex justify-center align-center"
+            >
+              <span>VF</span>
+            </div>
+            <div
+              class="avatar-sm avatar-text rounded-full text-md d-flex justify-center align-center"
+            >
+              <span>VF</span>
+            </div>
+            <div
+              class="avatar-xs avatar-text rounded-full text-sm d-flex justify-center align-center"
+            >
+              <span>VF</span>
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/61fd533933c09d0015b44dbb"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+        </section>
+        <hr />
+
+        <!-- Badge -->
+        <section class="component-container mt-8" id="badge">
+          <h3 class="headline-lg comp-name">Badge</h3>
+          <p class="text-sm my-4">
+            A badge can display the number of notifications or the status of
+            being online or offline.
+          </p>
+          <!-- status Badges -->
+          <p class="headline-md font-wt-bold mt-5">Status Badges</p>
+          <p class="text-sm my-4">
+            Status badge is used to represent a user's status. The options are
+            online (green), offline (grey), do not disturb (red), idle (yellow).
+            The badges are available according to 4 avatar sizes - large (lg),
+            medium (md) ,small (sm) and very small (xs).
+          </p>
+          <div
+            class="component-wrapper p-8 my-4 d-flex justify-around align-end"
+          >
+            <div class="avatar-lg p-relative">
+              <img
+                loading="lazy"
+                alt="avatar image"
+                class="img-responsive img-round rounded-full"
+                src="https://i.pravatar.cc?img=2"
+              />
+              <span
+                class="badge-status badge-lg-position badge-status-online rounded-full d-inline-block p-absolute"
+              ></span>
+            </div>
+
+            <div class="avatar-md p-relative">
+              <img
+                loading="lazy"
+                alt="avatar image"
+                class="img-responsive img-round rounded-full"
+                src="https://i.pravatar.cc?img=2"
+              />
+              <span
+                class="badge-status badge-md-position badge-status-offline rounded-full d-inline-block p-absolute"
+              ></span>
+            </div>
+
+            <div class="avatar-sm p-relative">
+              <img
+                loading="lazy"
+                alt="avatar image"
+                class="img-responsive img-round rounded-full"
+                src="https://i.pravatar.cc?img=2"
+              />
+              <span
+                class="badge-status badge-sm-position badge-status-dnd rounded-full d-inline-block p-absolute"
+              ></span>
+            </div>
+
+            <div class="avatar-xs p-relative">
+              <img
+                loading="lazy"
+                alt="avatar image"
+                class="img-responsive img-round rounded-full"
+                src="https://i.pravatar.cc?img=2"
+              />
+              <span
+                class="badge-status badge-xs-position badge-status-idle rounded-full d-inline-block p-absolute"
+              ></span>
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/61fd549533c09d0015b44dbc"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- text Badges -->
+          <p class="headline-md font-wt-bold mt-5">Text Badges</p>
+          <p class="text-sm my-4">We can add badges on headings and text</p>
+          <div class="component-wrapper p-8 my-4 d-flex flex-col">
+            <h1>
+              <span class="p-relative headline-lg"
+                >Heading with a badge<span
+                  class="badge heading-badge-position p-absolute rounded-full text-sm font-wt-bold"
+                  >4</span
+                ></span
+              >
+            </h1>
+
+            <p class="mt-8">
+              <span class="p-relative text-sm"
+                >Text with a badge<span
+                  class="badge text-badge-position p-absolute rounded-full text-sm font-wt-bold"
+                  >4</span
+                ></span
+              >
+            </p>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/61fd558633c09d0015b44dbe"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- Button Badges -->
+          <p class="headline-md font-wt-bold mt-5">Button Badges</p>
+          <p class="text-sm my-4">
+            Similar to text badges, we can add badges on buttons
+          </p>
+          <p class="text-sm my-4"></p>
+          <div class="component-wrapper p-8 my-4 d-flex justify-around">
+            <button
+              type="button"
+              class="btn btn-success p-3 rounded-sm p-relative"
+            >
+              <span class="text-sm">Action</span>
+              <span
+                class="badge btn-badge-position text-sm font-wt-bold rounded-full p-absolute"
+                >8</span
+              >
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-success p-5 rounded-sm p-relative"
+            >
+              <span class="text-md">Action</span>
+              <span
+                class="badge btn-badge-position text-sm font-wt-bold rounded-full p-absolute"
+                >5</span
+              >
+            </button>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/61fd563c33c09d0015b44dbf"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- Icon Badges -->
+          <p class="headline-md font-wt-bold mt-5">Icon Badges</p>
+          <p class="text-sm my-4">
+            Icon Badges can be used to display the number of messages or
+            notifications or items added in cart or wishlist.
+          </p>
+          <div class="component-wrapper p-8 my-4 d-flex justify-around">
+            <div class="p-relative text-md icon-badge-wrapper">
+              <i class="fas fa-shopping-cart"></i>
+              <span
+                class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+                >5</span
+              >
+            </div>
+
+            <div class="p-relative text-md icon-badge-wrapper">
+              <i class="far fa-envelope"></i>
+              <span
+                class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+                >5</span
+              >
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/61fd56c233c09d0015b44dc0"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+        </section>
+        <hr />
+        <!-- Button -->
+        <section class="component-container mt-8" id="button">
+          <h3 class="headline-lg comp-name">Button</h3>
+          <p class="text-sm my-4">
+            Buttons are the soul of an interactive web application. Buttons
+            allow users to take actions, and make choices, with a single tap.
+            Cool UI provides different types of buttons.
+          </p>
+
+          <!-- solid button -->
+          <p class="headline-md font-wt-bold mt-5">Solid Button</p>
+
+          <p class="text-sm my-4">
+            To use the solid button, add the base class
+            <span class="highlight-text">btn</span>
+            and any of the following classes for the different types of buttons
+            -
+            <span class="highlight-text">btn-primary</span>,
+            <span class="highlight-text">btn-danger</span>,
+            <span class="highlight-text">btn-success</span>
+          </p>
+          <div
+            class="component-wrapper p-8 my-4 d-flex flex-wrap justify-around"
+          >
+            <button
+              type="button"
+              class="btn rounded-sm text-sm p-3 btn-primary m-4"
+            >
+              Primary
+            </button>
+            <button
+              type="button"
+              class="btn rounded-sm text-sm p-3 btn-danger m-4"
+            >
+              Danger
+            </button>
+            <button
+              type="button"
+              class="btn rounded-sm text-sm p-3 btn-success m-4"
+            >
+              Success
+            </button>
+            <button class="btn btn-primary rounded-sm text-sm p-3 m-4" disabled>
+              Disabled
+            </button>
+          </div>
+
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/61fa3c3bb783be0015bbae5c"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- Large button -->
+          <p class="headline-md font-wt-bold mt-5">Large Button</p>
+
+          <div
+            class="component-wrapper p-8 my-4 d-flex flex-wrap justify-around"
+          >
+            <button
+              type="button"
+              class="btn btn-primary rounded-sm text-md p-5 m-4"
+            >
+              Primary
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger rounded-sm text-md p-5 m-4"
+            >
+              Danger
+            </button>
+            <button
+              type="button"
+              class="btn btn-success rounded-sm text-md p-5 m-4"
+            >
+              Success
+            </button>
+            <button class="btn btn-primary rounded-sm text-md p-5 m-4" disabled>
+              Disabled
+            </button>
+          </div>
+
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/61fa3be4b783be0015bbae59"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- outlined button -->
+          <p class="headline-md font-wt-bold mt-5">Outlined Button</p>
+
+          <p class="text-sm my-4">
+            To use the outlined button, add the base classes
+            <span class="highlight-text">btn</span> and
+            <span class="highlight-text">btn-outline</span>
+            and any of the following classes for the different types of buttons
+            -
+            <span class="highlight-text">btn-primary-outline</span>,
+            <span class="highlight-text">btn-danger-outline</span>,
+            <span class="highlight-text">btn-success-outline</span>
+          </p>
+
+          <div class="component-wrapper p-8 my-4 d-flex justify-around">
+            <button
+              class="btn btn-outline btn-primary-outline rounded-sm text-sm p-3"
+            >
+              Primary
+            </button>
+            <button
+              class="btn btn-outline btn-danger-outline rounded-sm text-sm p-3"
+            >
+              Danger
+            </button>
+            <button
+              class="btn btn-outline btn-success-outline rounded-sm text-sm p-3"
+            >
+              Success
+            </button>
+          </div>
+
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/61fa43e9b783be0015bbae64"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- link button -->
+          <p class="headline-md font-wt-bold mt-5">Link Button</p>
+
+          <p class="text-sm my-4">
+            To use the link button, add the base class
+            <span class="highlight-text">btn</span> followed by class
+            <span class="highlight-text">btn-link</span>
+          </p>
+
+          <div class="component-wrapper p-8 my-4 d-flex justify-center">
+            <button type="button" class="btn btn-link p-3 text-sm rounded-sm">
+              <a href="#">Link Button</a>
+            </button>
+          </div>
+
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/61fa4453b783be0015bbae65"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- icon button -->
+          <p class="headline-md font-wt-bold mt-5">Icon Button</p>
+
+          <p class="text-sm my-4">
+            To use the icon button, add the base class
+            <span class="highlight-text">btn</span> followed by class
+            <span class="highlight-text">btn-icon</span>
+          </p>
+
+          <div class="component-wrapper p-8 my-4 d-flex justify-around">
+            <button type="button" class="btn btn-icon">
+              <i class="fas fa-heart text-md"></i>
+            </button>
+            <button type="button" class="btn btn-icon">
+              <i class="fas fa-shopping-cart text-md"></i>
+            </button>
+            <button type="button" class="btn btn-icon">
+              <i class="fas fa-trash text-md"></i>
+            </button>
+          </div>
+
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/61fa44f0b783be0015bbae67"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- icon button with label -->
+          <p class="headline-md font-wt-bold mt-5">Icon Button with label</p>
+
+          <p class="text-sm my-4">
+            This is similar to icon button , we just add label here.
+          </p>
+
+          <div class="component-wrapper p-8 my-4 d-flex justify-around">
+            <button type="button" class="btn btn-primary p-4 rounded-sm">
+              <i class="fas fa-bolt mr-2"></i> Buy now
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline btn-primary-outline p-4 rounded-sm"
+            >
+              <i class="fas fa-shopping-cart mr-2"></i> Add To Cart
+            </button>
+          </div>
+
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/61fa45ccb783be0015bbae68"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- floating button -->
+          <p class="headline-md font-wt-bold mt-5">Floating Button</p>
+
+          <p class="text-sm my-4">
+            To use the floating button, add the base class
+            <span class="highlight-text">btn</span> followed by class
+            <span class="highlight-text">btn-floating</span>.
+          </p>
+
+          <div class="component-wrapper p-8 my-4 d-flex justify-around">
+            <button
+              class="btn btn-primary btn-floating p-4 rounded-full box-shadow-lg"
+            >
+              <i class="fas fa-plus text-md"></i>
+            </button>
+            <button
+              class="btn btn-primary btn-floating p-4 rounded-full box-shadow-lg"
+            >
+              <i class="fas fa-trash text-md"></i>
+            </button>
+            <button
+              class="btn btn-primary btn-floating p-4 rounded-full box-shadow-lg"
+            >
+              <i class="fas fa-share text-md"></i>
+            </button>
+          </div>
+
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/61fa4679b783be0015bbae6b"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+        </section>
+        <hr />
+        <!-- Cards -->
+        <section class="component-container mt-8" id="card">
+          <h3 class="headline-lg comp-name">Card</h3>
+          <p class="text-sm my-4">
+            Card are used to show user related data collectively, like product
+            details.
+          </p>
+
+          <p class="text-sm my-4">
+            You can copy and paste following codes to get different cards
+          </p>
+          <!-- Vertical card -->
+          <p class="headline-md font-wt-bold mt-5">Vertical Card</p>
+          <div class="component-wrapper p-8 my-4 container-center">
+            <div class="card-wrapper product-card">
+              <div class="px-4">
+                <img
+                  loading="lazy"
+                  class="img-responsive d-block m-auto pt-4 product-card-img"
+                  src="../../assets/monitor.png"
+                  alt="monitor image"
+                />
+              </div>
+              <div class="p-2">
+                <p class="font-wt-bold text-center text-sm">
+                  Redgear Wired Gaming Headphones with RGB LED Effect
+                </p>
+              </div>
+              <div class="px-8 py-2">
+                <div class="product-price-wrapper">
+                  <span class="product-discount-price text-sm font-wt-bold"
+                    >Rs. 1,790.00</span
+                  >
+                  <span class="product-original-price text-sm"
+                    >Rs. 2,999.00</span
+                  >
+                </div>
+                <span class="product-discount font-wt-bold text-sm"
+                  >Save 40%</span
+                >
+              </div>
+              <div class="card-btns-wrapper p-3 d-flex flex-col">
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-sm text-sm p-5 mx-4"
+                >
+                  <i class="fas fa-shopping-cart mr-3"></i>
+                  Add to Cart
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline btn-primary-outline rounded-sm text-sm p-3 mx-4"
+                >
+                  <i class="fas fa-heart mr-3"></i>
+                  Add to Wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/62010eaa4dd44f0015f3cdf9"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- Horizontal card -->
+          <p class="headline-md font-wt-bold mt-5">Horizontal Card</p>
+          <div
+            class="component-wrapper p-8 my-4 container-center d-flex flex-col"
+          >
+            <!-- variant 1 -->
+            <div
+              class="card-wrapper product-card horizontal-card-wrapper d-flex"
+            >
+              <div class="p-4 container-center">
+                <img
+                  loading="lazy"
+                  class="img-responsive horizontal-card-img"
+                  src="../../assets/monitor.png"
+                  alt="monitor image"
+                />
+              </div>
+              <div class="p-3">
+                <h2 class="cart-product-heading">
+                  LG 22 inch (55 cm) IPS Monitor
+                </h2>
+
+                <div class="pt-3">
+                  <div class="product-price-wrapper">
+                    <span class="product-discount-price text-sm font-wt-bold"
+                      >Rs. 7,999.00</span
+                    >
+                    <span class="product-original-price text-sm"
+                      >Rs. 9,438.82</span
+                    >
+                  </div>
+                  <span class="product-discount font-wt-bold text-sm"
+                    >Save 18%</span
+                  >
+                </div>
+
+                <div class="horizontal-card-btns-wrapper p-3 d-flex flex-col">
+                  <button
+                    type="button"
+                    class="btn btn-primary rounded-sm text-sm p-3"
+                  >
+                    <i class="fas fa-shopping-cart mr-3"></i>
+                    Add to Cart
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline btn-primary-outline rounded-sm text-sm p-3"
+                  >
+                    <i class="fas fa-heart mr-3"></i>
+                    Add to Wishlist
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- variant 2 -->
+            <div class="card-wrapper d-flex mt-4 w-100">
+              <div class="p-4 container-center">
+                <img
+                  class="img-responsive horizontal-card-img w-75"
+                  src="../../assets/monitor.png"
+                  alt="monitor image"
+                />
+              </div>
+              <div class="p-3 w-100">
+                <div class="product-info-wrapper">
+                  <h2 class="cart-product-heading">
+                    LG 22 inch (55 cm) IPS Monitor
+                  </h2>
+
+                  <div class="pt-3">
+                    <div class="product-price-wrapper">
+                      <span class="product-discount-price text-sm font-wt-bold"
+                        >Rs. 7,999.00</span
+                      >
+                      <span class="product-original-price text-sm ml-6"
+                        >Rs. 9,438.82</span
+                      >
+                    </div>
+                    <span class="product-discount font-wt-bold text-sm"
+                      >Save 18%</span
+                    >
+                  </div>
+                </div>
+
+                <div class="d-flex my-2 cart-action-container">
+                  <div class="d-flex align-center quantity-btn-container">
+                    <button
+                      type="button"
+                      class="btn btn-quantity btn-primary rounded-full"
+                    >
+                      <i class="fas fa-plus text-sm"></i>
+                    </button>
+                    <span class="text-sm mx-2 font-wt-semibold">1</span>
+                    <button
+                      type="button"
+                      class="btn btn-quantity btn-outline btn-primary-outline rounded-full"
+                    >
+                      <i class="fas fa-minus text-sm"></i>
+                    </button>
+                  </div>
+                  <div class="d-flex w-100 my-4 cart-btn-wrapper">
+                    <button
+                      type="button"
+                      class="btn btn-remove btn-outline btn-primary-outline rounded-sm text-sm p-3 ml-4"
+                    >
+                      <i class="fas fa-trash mr-3"></i>
+                      Remove
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary rounded-sm text-sm p-3 ml-auto"
+                    >
+                      <i class="fas fa-heart mr-3"></i>
+                      Move to Wishlist
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/62010fa44dd44f0015f3cdfd"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- card with badge-->
+          <p class="headline-md font-wt-bold mt-5">Card with Badge</p>
+          <p class="text-sm my-4">
+            badges on cards are generally used to display some critical info on
+            top of the card.
+          </p>
+          <div class="component-wrapper p-8 my-4 container-center">
+            <div class="card-wrapper product-card">
+              <span class="vertical-card-badge text-sm p-3 p-relative"
+                >Best Seller</span
+              >
+              <div class="px-4">
+                <img
+                  loading="lazy"
+                  class="img-responsive d-block m-auto pt-4 product-card-img"
+                  src="../../assets/monitor.png"
+                  alt="monitor image"
+                />
+              </div>
+              <div class="p-2">
+                <p class="font-wt-bold text-center text-sm">
+                  Redgear Wired Gaming Headphones with RGB LED Effect
+                </p>
+              </div>
+              <div class="px-8 py-2">
+                <div class="product-price-wrapper">
+                  <span class="product-discount-price text-sm font-wt-bold"
+                    >Rs. 1,790.00</span
+                  >
+                  <span class="product-original-price text-sm"
+                    >Rs. 2,999.00</span
+                  >
+                </div>
+                <span class="product-discount font-wt-bold text-sm"
+                  >Save 40%</span
+                >
+              </div>
+              <div class="card-btns-wrapper p-3 d-flex flex-col">
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-sm text-sm p-5 mx-4"
+                >
+                  <i class="fas fa-shopping-cart mr-3"></i>
+                  Add to Cart
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline btn-primary-outline rounded-sm text-sm p-3 mx-4"
+                >
+                  <i class="fas fa-heart mr-3"></i>
+                  Add to Wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/620110884dd44f0015f3cdff"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- card with dismiss button-->
+          <p class="headline-md font-wt-bold mt-5">Card with Dismiss</p>
+          <p class="text-sm my-4">
+            Cards with dismiss button can be closed by clicking on the close
+            button.
+          </p>
+          <div class="component-wrapper p-8 my-4 container-center">
+            <button
+              type="button"
+              class="btn rounded-sm text-sm p-3 btn-primary reset-dismissed-card"
+            >
+              Reset
+            </button>
+            <div class="card-wrapper dismiss-card-wrapper product-card">
+              <div class="close-icon-wrapper">
+                <i class="fas fa-times-circle p-2 fa-3x"></i>
+              </div>
+              <div class="px-4">
+                <img
+                  loading="lazy"
+                  class="img-responsive d-block m-auto pt-4 product-card-img"
+                  src="../../assets/monitor.png"
+                  alt="monitor image"
+                />
+              </div>
+              <div class="p-2">
+                <p class="font-wt-bold text-center text-sm">
+                  Redgear Wired Gaming Headphones with RGB LED Effect
+                </p>
+              </div>
+              <div class="px-8 py-2">
+                <div class="product-price-wrapper">
+                  <span class="product-discount-price text-sm font-wt-bold"
+                    >Rs. 1,790.00</span
+                  >
+                  <span class="product-original-price text-sm"
+                    >Rs. 2,999.00</span
+                  >
+                </div>
+                <span class="product-discount font-wt-bold text-sm"
+                  >Save 40%</span
+                >
+              </div>
+              <div class="card-btns-wrapper p-3 d-flex flex-col">
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-sm text-sm p-5 mx-4"
+                >
+                  <i class="fas fa-shopping-cart mr-3"></i>
+                  Add to Cart
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline btn-primary-outline rounded-sm text-sm p-3 mx-4"
+                >
+                  <i class="fas fa-heart mr-3"></i>
+                  Add to Wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/6201144aed723a001551bf80"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+          <p class="text-sm my-4">Javascript code</p>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/6215458ebec8ab0015f10fc6"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- card with shadow-->
+          <p class="headline-md font-wt-bold mt-5">Card with Shadow</p>
+          <p class="text-sm my-4">
+            To add box shadow , you can use any one of the following class -
+            <span class="highlight-text">box-shadow-lg</span>,
+            <span class="highlight-text">box-shadow-md</span>,
+            <span class="highlight-text">box-shadow-sm</span>
+          </p>
+
+          <div class="component-wrapper p-8 my-4 container-center">
+            <div class="card-wrapper product-card box-shadow-lg">
+              <div class="px-4">
+                <img
+                  loading="lazy"
+                  class="img-responsive d-block m-auto pt-4 product-card-img"
+                  src="../../assets/monitor.png"
+                  alt="monitor image"
+                />
+              </div>
+              <div class="p-2">
+                <p class="font-wt-bold text-center text-sm">
+                  Redgear Wired Gaming Headphones with RGB LED Effect
+                </p>
+              </div>
+              <div class="px-8 py-2">
+                <div class="product-price-wrapper">
+                  <span class="product-discount-price text-sm font-wt-bold"
+                    >Rs. 1,790.00</span
+                  >
+                  <span class="product-original-price text-sm"
+                    >Rs. 2,999.00</span
+                  >
+                </div>
+                <span class="product-discount font-wt-bold text-sm"
+                  >Save 40%</span
+                >
+              </div>
+              <div class="card-btns-wrapper p-3 d-flex flex-col">
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-sm text-sm p-5 mx-4"
+                >
+                  <i class="fas fa-shopping-cart mr-3"></i>
+                  Add to Cart
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline btn-primary-outline rounded-sm text-sm p-3 mx-4"
+                >
+                  <i class="fas fa-heart mr-3"></i>
+                  Add to Wishlist
+                </button>
+              </div>
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/62011534ed723a001551bf81"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- card with text overlay-->
+          <p class="headline-md font-wt-bold mt-5">Card with text overlay</p>
+
+          <p class="text-sm my-4">
+            Cards with text overlay are used to indicate some important
+            information to the user using text placed on top of the card.
+          </p>
+          <div class="component-wrapper p-8 my-4 container-center">
+            <div class="card-wrapper product-card p-relative">
+              <div class="px-4">
+                <img
+                  loading="lazy"
+                  class="img-responsive d-block m-auto pt-4 product-card-img"
+                  src="../../assets/monitor.png"
+                  alt="monitor image"
+                />
+              </div>
+              <div class="p-2">
+                <p class="font-wt-bold text-center text-sm">
+                  Redgear Wired Gaming Headphones with RGB LED Effect
+                </p>
+              </div>
+              <div class="px-8 py-2">
+                <div class="product-price-wrapper">
+                  <span class="product-discount-price text-sm font-wt-bold"
+                    >Rs. 1,790.00</span
+                  >
+                  <span class="product-original-price text-sm"
+                    >Rs. 2,999.00</span
+                  >
+                </div>
+                <span class="product-discount font-wt-bold text-sm"
+                  >Save 40%</span
+                >
+              </div>
+              <div class="card-btns-wrapper p-3 d-flex flex-col">
+                <button
+                  type="button"
+                  class="btn btn-primary rounded-sm text-sm p-5 mx-4"
+                >
+                  <i class="fas fa-shopping-cart mr-3"></i>
+                  Add to Cart
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline btn-primary-outline rounded-sm text-sm p-3 mx-4"
+                >
+                  <i class="fas fa-heart mr-3"></i>
+                  Add to Wishlist
+                </button>
+              </div>
+              <div
+                class="text-overlay-container p-absolute w-100 h-100 container-center"
+              >
+                <span class="text-overlay text-uppercase text-md p-5 rounded-md"
+                  >Out of Stock</span
+                >
+              </div>
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/620115b4ed723a001551bf85"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- Text only card-->
+          <p class="headline-md font-wt-bold mt-5">Text only card</p>
+
+          <div class="component-wrapper p-8 my-4 container-center">
+            <div class="card-wrapper product-card">
+              <div class="p-2">
+                <h2 class="text-center headline-md">Card header</h2>
+              </div>
+              <div class="px-8 py-2">
+                <p class="text-sm">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores, corrupti unde. Perspiciatis eos sunt temporibus nulla
+                  atque soluta saepe inventore necessitatibus dolorem aperiam
+                  alias placeat, eveniet quos sint nisi dignissimos!
+                </p>
+              </div>
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/62011637ed723a001551bf89"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+        </section>
+        <hr />
+        <!-- image -->
+        <section class="component-container mt-8" id="image">
+          <h3 class="headline-lg comp-name">Image</h3>
+          <p class="text-sm my-4">
+            Responsive Image Components are used to display Images on websites,
+            which are screen responsive. They expand upto the width of the
+            container they are in.
+          </p>
+          <!-- Responsive image -->
+          <p class="headline-md font-wt-bold mt-5">Responsive Image</p>
+
+          <p class="text-sm my-4">
+            In order to make an image responsive simply add the class
+            <span class="highlight-text">img-responsive</span> which will make
+            the image occupy 100% width of the parent container. If the screen
+            size reduces, the image size will also reduce without affecting the
+            aspect ratio.
+          </p>
+          <div class="component-wrapper p-8 my-4">
+            <img
+              loading="lazy"
+              class="img-responsive"
+              src="https://source.unsplash.com/1EYMue_AwDw"
+              alt="scenary"
+            />
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/61fbdf096ab14d0015c32d69"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- round images -->
+          <p class="headline-md font-wt-bold mt-5">Round Image</p>
+
+          <p class="text-sm my-4">
+            To use round images add classses
+            <span class="highlight-text">img-responsive</span> and
+            <span class="highlight-text">rounded-full</span>
+          </p>
+          <div class="component-wrapper p-8 my-4 d-flex justify-around">
+            <div class="w-25">
+              <img
+                loading="lazy"
+                class="img-round rounded-full"
+                src="https://source.unsplash.com/73iq0upkPnI"
+                alt="tiger"
+              />
+            </div>
+            <div class="w-25">
+              <img
+                loading="lazy"
+                class="img-round rounded-full"
+                src="https://source.unsplash.com/7sfJhVSqIE4"
+                alt="squirrel"
+              />
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/61fbe0836ab14d0015c32d6a"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+        </section>
+        <hr />
+        <!-- Input -->
+        <section class="component-container mt-8" id="input">
+          <h3 class="headline-lg comp-name">Input</h3>
+          <p class="text-sm my-4">
+            Inputs are necessary for user interaction with the website. Inputs
+            are used to take information from the user
+          </p>
+
+          <!-- Label inputs -->
+          <p class="headline-md font-wt-bold mt-5">Label Inputs</p>
+          <div class="component-wrapper p-8 my-4">
+            <div class="d-flex flex-col">
+              <label class="input-label-required text-sm" for="email"
+                >Email</label
+              >
+              <input
+                type="text"
+                class="text-input w-100 p-3 text-sm"
+                placeholder="abc@gmail.com"
+                required
+              />
+            </div>
+
+            <div class="d-flex flex-col mt-5">
+              <label class="text-sm" for="name">Name</label>
+              <input
+                type="text"
+                class="text-input w-100 p-3 text-sm"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+
+            <div class="d-flex flex-col mt-5">
+              <label class="input-label-required text-sm" for="password"
+                >Password</label
+              >
+              <input
+                type="password"
+                class="text-input w-100 p-3 text-sm"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+
+            <div class="input-grp-err d-flex flex-col mt-5">
+              <label class="input-label-required text-sm" for="confirm-password"
+                >Confirm Password</label
+              >
+              <input
+                type="password"
+                class="text-input w-100 p-3 text-sm"
+                placeholder="Re-enter password"
+                required
+              />
+              <span class="text-sm">Passwords not matched. Try Again</span>
+            </div>
+
+            <div class="input-grp-success d-flex flex-col mt-5">
+              <label class="text-sm" for="confirm-password"
+                >Confirm Password</label
+              >
+              <input
+                type="text"
+                class="text-input w-100 p-2 text-sm"
+                placeholder="Re-enter password"
+                required
+              />
+              <span class="text-sm">Passwords matched</span>
+            </div>
+
+            <div class="d-flex flex-col mt-5">
+              <label class="text-sm" for="country">Country</label>
+              <input
+                type="text"
+                class="text-input text-sm w-100 p-3"
+                name="country"
+                value="India"
+                readonly
+              />
+            </div>
+
+            <div class="d-flex flex-col mt-5">
+              <label class="text-sm" for="address">Enter Your Address</label>
+              <textarea
+                type="text"
+                class="text-area w-100 p-3 text-sm"
+                placeholder="Enter address here"
+                rows="3"
+              ></textarea>
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/61fbe4476ab14d0015c32d79"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+        </section>
+        <hr />
+        <!-- Modal -->
+        <section class="component-container mt-8" id="modal">
+          <h3 class="headline-lg comp-name">Modal</h3>
+          <p class="text-sm my-4">
+            Modals are like pop-ups which are positioned over everything else in
+            the document. Only way to close it is to click the close button or
+            click on action button.
+          </p>
+          <!-- Simple Modal -->
+          <p class="headline-md font-wt-bold mt-5">Simple Modal</p>
+          <div class="component-wrapper p-8 my-4">
+            <div class="modal-container rounded-md box-shadow-sm">
+              <div class="p-8">
+                <h2 class="headline-md">Modal header</h2>
+                <p class="text-sm mt-3">
+                  Cras mattis consectetur purus sit amet fermentum. Cras justo
+                  odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
+                  risus, porta ac consectetur ac, vestibulum at eros.
+                </p>
+                <div
+                  class="action-btns-wrapper mt-4 d-flex justify-end"
+                  id="simple-modal-buttons"
+                >
+                  <button
+                    class="btn btn-primary btn-action rounded-sm text-sm p-3"
+                  >
+                    Save Changes
+                  </button>
+                  <button
+                    class="btn btn-outline btn-action btn-primary-outline rounded-sm text-sm p-3 ml-4"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="component-wrapper p-8 my-4">
+            <button
+              class="btn btn-primary rounded-sm text-sm p-3"
+              id="simple-modal-demo-btn"
+            >
+              Live Demo
+            </button>
+          </div>
+          <div
+            class="modal-wrapper w-100 h-100 justify-center align-center d-none p-fixed"
+            id="simple-modal-wrapper"
+          >
+            <div class="modal-container rounded-md box-shadow-sm">
+              <div class="p-8">
+                <h2 class="headline-md">Modal header</h2>
+                <p class="text-sm mt-3">
+                  Cras mattis consectetur purus sit amet fermentum. Cras justo
+                  odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
+                  risus, porta ac consectetur ac, vestibulum at eros.
+                </p>
+                <div
+                  class="action-btns-wrapper mt-4 d-flex justify-end"
+                  id="simple-modal-buttons"
+                >
+                  <button
+                    class="btn btn-primary btn-action rounded-sm text-sm p-3"
+                  >
+                    Save Changes
+                  </button>
+                  <button
+                    class="btn btn-outline btn-action btn-primary-outline rounded-sm text-sm p-3 ml-4"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/62026580ed723a001551c1fe"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <p class="text-sm my-4">Javascript code</p>
+
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/62154a1984dba90015dab9c9"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- list  modal -->
+          <p class="headline-md font-wt-bold mt-5">List Modal</p>
+          <p class="text-sm my-4">
+            List modals can be useful if you have to select any particular item
+            from list
+          </p>
+          <div class="component-wrapper p-8 my-4">
+            <div class="modal-container rounded-md">
+              <div class="p-8">
+                <h2 class="headline-md">Modal header</h2>
+                <div class="action-btns-wrapper mt-4" id="list-modal-buttons">
+                  <button
+                    class="btn btn-outline btn-primary-outline btn-action rounded-sm text-sm w-100 d-flex justify-start align-center p-2"
+                  >
+                    <i class="fas fa-user mr-2"></i>
+                    Item 1
+                  </button>
+                  <button
+                    class="btn btn-outline btn-primary-outline btn-action rounded-sm text-sm p-3 mt-4 w-100 d-flex justify-start align-center p-2"
+                  >
+                    <i class="fas fa-user mr-2"></i>
+                    Item 2
+                  </button>
+                  <button
+                    class="btn btn-outline btn-primary-outline btn-action rounded-sm text-sm p-3 mt-4 w-100 d-flex justify-start align-center p-2"
+                  >
+                    <i class="fas fa-user mr-2"></i>
+                    Item 3
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="component-wrapper p-8 my-4">
+            <button
+              class="btn btn-primary rounded-sm text-sm p-3"
+              id="list-modal-demo-btn"
+            >
+              Live Demo
+            </button>
+          </div>
+
+          <div
+            class="modal-wrapper w-100 h-100 justify-center align-center d-none p-fixed"
+            id="list-modal-wrapper"
+          >
+            <div class="modal-container rounded-md">
+              <div class="p-8">
+                <h2 class="headline-md">Modal header</h2>
+                <div class="action-btns-wrapper mt-4" id="list-modal-buttons">
+                  <button
+                    class="btn btn-outline btn-primary-outline btn-action rounded-sm text-sm w-100 d-flex justify-start align-center p-2"
+                  >
+                    <i class="fas fa-user mr-2"></i>
+                    Item 1
+                  </button>
+                  <button
+                    class="btn btn-outline btn-primary-outline btn-action rounded-sm text-sm p-3 mt-4 w-100 d-flex justify-start align-center p-2"
+                  >
+                    <i class="fas fa-user mr-2"></i>
+                    Item 2
+                  </button>
+                  <button
+                    class="btn btn-outline btn-primary-outline btn-action rounded-sm text-sm p-3 mt-4 w-100 d-flex justify-start align-center p-2"
+                  >
+                    <i class="fas fa-user mr-2"></i>
+                    Item 3
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/6202d9f2234b8a0015700c0a"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <p class="text-sm my-4">Javascript code</p>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/62154b658646a200159b5a7c"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+        </section>
+        <hr />
+        <!-- List -->
+        <section class="component-container mt-8" id="list">
+          <h3 class="headline-lg comp-name">List</h3>
+          <p class="text-sm my-4">
+            List groups are a flexible component for displaying a series of
+            content like notifications drawer.
+          </p>
+          <!-- Spaced List -->
+          <p class="headline-md font-wt-bold mt-5">Spaced List</p>
+          <div class="component-wrapper p-8 my-4 d-flex justify-center">
+            <ul class="list p-8">
+              <li class="list-item mt-4">
+                <div class="p-4">
+                  <div class="d-flex align-center text-sm">
+                    <div class="avatar-sm">
+                      <img
+                        loading="lazy"
+                        class="img-responsive img-round rounded-full"
+                        src="https://i.pravatar.cc?img=32"
+                        alt="avatar image"
+                      />
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="headline-md">John Doe</h4>
+                      <p class="text-sm">@johndoe</p>
+                    </div>
+                  </div>
+                  <p class="text-sm">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Suscipit dolore earum ducimus quaerat perferendis natus
+                    itaque beatae quae et assumenda id quo eius facere, illum
+                    excepturi sapiente ipsam. Iste, quos.
+                  </p>
+                </div>
+              </li>
+              <li class="list-item mt-4">
+                <div class="p-4">
+                  <div class="d-flex align-center text-sm">
+                    <div class="avatar-sm">
+                      <img
+                        loading="lazy"
+                        class="img-responsive img-round rounded-full"
+                        src="https://i.pravatar.cc?img=32"
+                        alt="avatar image"
+                      />
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="headline-md">John Doe</h4>
+                      <p class="text-sm">@johndoe</p>
+                    </div>
+                  </div>
+                  <p class="text-sm">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Suscipit dolore earum ducimus quaerat perferendis natus
+                    itaque beatae quae et assumenda id quo eius facere, illum
+                    excepturi sapiente ipsam. Iste, quos.
+                  </p>
+                </div>
+              </li>
+              <li class="list-item mt-4">
+                <div class="p-4">
+                  <div class="d-flex align-center text-sm">
+                    <div class="avatar-sm">
+                      <img
+                        loading="lazy"
+                        class="img-responsive img-round rounded-full"
+                        src="https://i.pravatar.cc?img=32"
+                        alt="avatar image"
+                      />
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="headline-md">John Doe</h4>
+                      <p class="text-sm">@johndoe</p>
+                    </div>
+                  </div>
+                  <p class="text-sm">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Suscipit dolore earum ducimus quaerat perferendis natus
+                    itaque beatae quae et assumenda id quo eius facere, illum
+                    excepturi sapiente ipsam. Iste, quos.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/620424bdc6efb50015062dc1"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- Stacked List -->
+          <p class="headline-md font-wt-bold mt-5">Stacked List</p>
+          <div class="component-wrapper p-8 my-4 d-flex justify-center">
+            <ul class="list p-8">
+              <li class="list-item">
+                <div class="p-4">
+                  <div class="d-flex align-center text-sm">
+                    <div class="avatar-sm">
+                      <img
+                        loading="lazy"
+                        class="img-responsive img-round rounded-full"
+                        src="https://i.pravatar.cc?img=32"
+                        alt="avatar image"
+                      />
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="headline-md">John Doe</h4>
+                      <p class="text-sm">@johndoe</p>
+                    </div>
+                  </div>
+                  <p class="text-sm">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Suscipit dolore earum ducimus quaerat perferendis natus
+                    itaque beatae quae et assumenda id quo eius facere, illum
+                    excepturi sapiente ipsam. Iste, quos.
+                  </p>
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="p-4">
+                  <div class="d-flex align-center text-sm">
+                    <div class="avatar-sm">
+                      <img
+                        loading="lazy"
+                        class="img-responsive img-round rounded-full"
+                        src="https://i.pravatar.cc?img=32"
+                        alt="avatar image"
+                      />
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="headline-md">John Doe</h4>
+                      <p class="text-sm">@johndoe</p>
+                    </div>
+                  </div>
+                  <p class="text-sm">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Suscipit dolore earum ducimus quaerat perferendis natus
+                    itaque beatae quae et assumenda id quo eius facere, illum
+                    excepturi sapiente ipsam. Iste, quos.
+                  </p>
+                </div>
+              </li>
+              <li class="list-item">
+                <div class="p-4">
+                  <div class="d-flex align-center text-sm">
+                    <div class="avatar-sm">
+                      <img
+                        loading="lazy"
+                        class="img-responsive img-round rounded-full"
+                        src="https://i.pravatar.cc?img=32"
+                        alt="avatar image"
+                      />
+                    </div>
+                    <div class="ml-4">
+                      <h4 class="headline-md">John Doe</h4>
+                      <p class="text-sm">@johndoe</p>
+                    </div>
+                  </div>
+                  <p class="text-sm">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Suscipit dolore earum ducimus quaerat perferendis natus
+                    itaque beatae quae et assumenda id quo eius facere, illum
+                    excepturi sapiente ipsam. Iste, quos.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/6204255ec6efb50015062dc4"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+        </section>
+        <hr />
+        <!-- Navigation -->
+        <section class="component-container mt-8" id="navigation">
+          <h3 class="headline-lg comp-name">Navigation</h3>
+          <p class="text-sm my-4">
+            Navigation is a very important part of any website. It is made for
+            the user to navigate around the website and access different links.
+            It is usually at the top of the page.
+          </p>
+
+          <!-- simple navbar -->
+          <p class="headline-md font-wt-bold mt-5">Simple Navigation</p>
+          <div class="component-wrapper p-8 my-4">
+            <header
+              class="navbar-wrapper d-flex flex-wrap align-center box-shadow-lg"
+            >
+              <h1 class="brand headline-lg m-4">Brand</h1>
+              <nav class="ml-auto">
+                <ul class="d-flex text-sm">
+                  <li class="nav-link-item mx-4 font-wt-bold">Home</li>
+                  <li class="nav-link-item mx-4 font-wt-bold">Profile</li>
+                  <li class="nav-link-item mx-4 font-wt-bold">Cart</li>
+                  <li class="nav-link-item mx-4 font-wt-bold">Wishlist</li>
+                </ul>
+              </nav>
+            </header>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/6204e3dcc6efb50015062e45"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- Navigation with Search bar -->
+          <p class="headline-md font-wt-bold mt-5">
+            Navigation with Search-bar
+          </p>
+          <div class="component-wrapper p-8 my-4">
+            <header
+              class="navbar-wrapper d-flex flex-wrap align-center justify-around box-shadow-lg"
+            >
+              <h1 class="brand headline-lg p-4">Brand</h1>
+              <div
+                class="search-box d-flex align-center justify-between my-4 w-50"
+              >
+                <input
+                  type="text"
+                  class="search-input w-100 p-2 m-2 text-sm"
+                  placeholder="Search for products..."
+                  required
+                />
+                <button type="submit" class="btn btn-icon p-4">
+                  <i class="fas fa-search text-md"></i>
+                </button>
+              </div>
+              <nav class="">
+                <ul class="d-flex text-sm">
+                  <li class="nav-link-item mx-4 my-4 font-wt-bold">Home</li>
+                  <li class="nav-link-item mx-4 my-4 font-wt-bold">Profile</li>
+                  <li class="nav-link-item mx-4 my-4 font-wt-bold">Cart</li>
+                  <li class="nav-link-item mx-4 my-4 font-wt-bold">Wishlist</li>
+                </ul>
+              </nav>
+            </header>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/6204e4e7c6efb50015062e4a"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- Navigation with search bar and button -->
+          <p class="headline-md font-wt-bold mt-5">
+            Navigation with search-bar and buttons
+          </p>
+          <div class="component-wrapper p-8 my-4">
+            <header
+              class="navbar-wrapper d-flex flex-wrap align-center justify-around box-shadow-lg"
+            >
+              <h1 class="brand headline-lg p-4">Brand</h1>
+              <div
+                class="search-box d-flex align-center justify-between my-4 w-50"
+              >
+                <input
+                  type="text"
+                  class="search-input w-100 p-2 m-2 text-sm"
+                  placeholder="Search for products..."
+                  required
+                />
+                <button type="submit" class="btn btn-icon p-4">
+                  <i class="fas fa-search text-md"></i>
+                </button>
+              </div>
+              <button
+                type="button"
+                class="btn btn-primary rounded-sm text-sm p-4 my-4"
+              >
+                Login
+              </button>
+              <button
+                class="btn btn-outline btn-primary-outline rounded-sm text-sm p-4 my-4 my-4"
+              >
+                Wishlist
+              </button>
+            </header>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/6204e571c6efb50015062e4e"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!--  navigation with serch-bar and icon buttons -->
+          <p class="headline-md font-wt-bold mt-5">
+            Navigation with search-bar and icon buttons
+          </p>
+          <div class="component-wrapper p-8 my-4">
+            <header
+              class="navbar-wrapper d-flex flex-wrap align-center justify-around box-shadow-lg"
+            >
+              <h1 class="brand headline-lg p-4">Brand</h1>
+              <div
+                class="search-box d-flex align-center justify-between my-4 w-50"
+              >
+                <input
+                  type="text"
+                  class="search-input w-100 p-2 m-2 text-sm"
+                  placeholder="Search for products..."
+                  required
+                />
+                <button type="submit" class="btn btn-icon p-4">
+                  <i class="fas fa-search text-md"></i>
+                </button>
+              </div>
+              <ul class="nav-links d-flex align-center">
+                <li>
+                  <button
+                    type="button"
+                    class="btn btn-primary rounded-sm text-sm p-4 my-4"
+                  >
+                    Login
+                  </button>
+                </li>
+                <li class="p-relative text-md icon-badge-wrapper m-4">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span
+                    class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+                    >5</span
+                  >
+                </li>
+                <li class="p-relative text-md icon-badge-wrapper m-4">
+                  <i class="fas fa-heart"></i>
+                  <span
+                    class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+                    >7</span
+                  >
+                </li>
+              </ul>
+            </header>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/6204e61ac6efb50015062e51"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!--  navigation with hamburger -->
+          <p class="headline-md font-wt-bold mt-5">
+            Mobile Navigation with hamburger menu
+          </p>
+          <p class="text-sm">Resize the screen to see hamburger menu</p>
+          <div class="component-wrapper p-8 my-4">
+            <header
+              class="navbar-wrapper d-flex align-center justify-around box-shadow-lg"
+            >
+              <a
+                class="brand-name text-dec-none headline-lg font-wt-bold p-4"
+                href="#"
+                >Brand</a
+              >
+              <button id="hamburger-btn" class="btn text-md ml-auto mr-8 p-4">
+                <i class="fas fa-bars hamburger-icon"></i>
+              </button>
+              <section id="nav-menu-without-hamburger" class="d-flex">
+                <div
+                  class="search-box d-flex align-center justify-between my-8 w-50"
+                >
+                  <input
+                    type="text"
+                    class="search-input p-2 m-2 text-sm"
+                    placeholder="Search for products..."
+                    required
+                  />
+                  <button type="submit" class="btn btn-icon p-4">
+                    <i class="fas fa-search text-md"></i>
+                  </button>
+                </div>
+                <nav class="nav-links d-flex align-center">
+                  <a
+                    href="#"
+                    class="btn text-dec-none btn-primary rounded-sm text-sm p-4 ml-4"
+                  >
+                    Signup
+                  </a>
+
+                  <a
+                    class="nav-link-icon p-relative icon-badge-wrapper m-3 d-flex flex-col align-center text-dec-none"
+                    href="#"
+                  >
+                    <i class="fas fa-store text-md"></i>
+                    <span class="nav-link-description text-sm">Products</span>
+                  </a>
+                  <a
+                    class="nav-link-icon icon-badge-wrapper m-3 d-flex flex-col align-center text-dec-none"
+                    href="#"
+                  >
+                    <span class="p-relative"
+                      ><i class="fas fa-shopping-cart text-md"></i>
+                      <span
+                        class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+                        >5</span
+                      ></span
+                    >
+                    <span class="nav-link-description text-sm">Cart</span>
+                  </a>
+                  <a
+                    class="nav-link-icon icon-badge-wrapper m-3 d-flex flex-col align-center text-dec-none"
+                    href="#"
+                  >
+                    <span class="p-relative">
+                      <i class="fas fa-heart text-md"></i>
+                      <span
+                        class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+                        >7</span
+                      ></span
+                    >
+                    <span class="nav-link-description text-sm">Wishlist</span>
+                  </a>
+                </nav>
+              </section>
+            </header>
+
+            <!-- hamburger nav menu -->
+            <section id="hamburger-nav-menu" class="d-none p-8">
+              <div class="d-flex align-center justify-center">
+                <div
+                  class="search-box search-box-hamburg ml-8 d-flex align-center justify-between my-8 w-50"
+                >
+                  <input
+                    type="text"
+                    class="search-input p-2 m-2 text-sm"
+                    placeholder="Search for products..."
+                    required
+                  />
+                  <button
+                    type="submit"
+                    class="btn btn-search btn-search-hamburg btn-icon p-4 p-relative"
+                  >
+                    <i class="fas fa-search text-md"></i>
+                  </button>
+                </div>
+                <div class="ml-8">
+                  <a
+                    href="#"
+                    class="btn text-dec-none btn-primary rounded-sm text-sm p-4 mr-4"
+                  >
+                    Signup
+                  </a>
+                </div>
+              </div>
+              <nav class="nav-links">
+                <div class="d-flex ml-4 justify-around">
+                  <a
+                    class="nav-link-icon p-relative icon-badge-wrapper m-3 d-flex align-center text-dec-none"
+                    href="#"
+                  >
+                    <i class="fas fa-store text-md"></i>
+                    <span class="nav-link-description text-sm ml-4"
+                      >Products</span
+                    >
+                  </a>
+                  <a
+                    class="nav-link-icon icon-badge-wrapper m-3 d-flex align-center text-dec-none"
+                    href="#"
+                  >
+                    <span class="p-relative"
+                      ><i class="fas fa-shopping-cart text-md"></i>
+                      <span
+                        class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+                        >5</span
+                      ></span
+                    >
+                    <span class="nav-link-description text-sm ml-4">Cart</span>
+                  </a>
+                  <a
+                    class="nav-link-icon icon-badge-wrapper m-3 d-flex align-center text-dec-none"
+                    href="#"
+                  >
+                    <span class="p-relative">
+                      <i class="fas fa-heart text-md"></i>
+                      <span
+                        class="badge icon-badge-position text-sm font-wt-bold rounded-full p-absolute"
+                        >7</span
+                      ></span
+                    >
+                    <span class="nav-link-description text-sm ml-4"
+                      >Wishlist</span
+                    >
+                  </a>
+                </div>
+              </nav>
+            </section>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/6213673511c4db00151a7e3a"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+          <p class="text-sm my-4">Javascript code</p>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/62154e798646a200159b5a7f"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+        </section>
+        <hr />
+        <!-- Grid -->
+        <section class="component-container mt-8" id="grid">
+          <h3 class="headline-lg comp-name">Grid</h3>
+          <p class="text-sm my-4">
+            Grids are used to display content in columns on a website. They make
+            the site look cleaner and more consistent.
+          </p>
+
+          <p class="text-sm my-4">
+            Cool UI provides 4 types of grid layouts and they are responsive.
+          </p>
+
+          <!-- grid 20-80 -->
+          <p class="headline-md font-wt-bold mt-5">20-80 Grid layout</p>
+          <p class="text-sm my-4">
+            If you want to use any container as grid with 20%-80% layout then
+            first add <span class="highlight-text">grid</span> class to it
+            followed by class <span class="highlight-text">grid-20-80</span> .
+          </p>
+          <div class="component-wrapper p-8 my-4">
+            <div class="d-grid grid-20-80 gap-1">
+              <div class="grid-item text-center text-md">Column 1</div>
+              <div class="grid-item text-center text-md">Column 2</div>
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/621121c41cc8b9001542ee78"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- grid 30-70 -->
+          <p class="headline-md font-wt-bold mt-5">30-70 Grid layout</p>
+          <p class="text-sm my-4">
+            If you want to use any container as grid with 30%-70% layout then
+            first add <span class="highlight-text">grid</span> class to it
+            followed by class <span class="highlight-text">grid-30-70</span>.
+          </p>
+          <div class="component-wrapper p-8 my-4">
+            <div class="d-grid grid-30-70 gap-1">
+              <div class="grid-item text-center text-md">Column 1</div>
+              <div class="grid-item text-center text-md">Column 2</div>
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/621122581cc8b9001542ee79"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- grid 50-50 -->
+          <p class="headline-md font-wt-bold mt-5">
+            50-50 ( 2 Column ) Grid layout
+          </p>
+          <p class="text-sm my-4">
+            If you want to use any container as grid with 2 column layout then
+            first add <span class="highlight-text">grid</span> class to it
+            followed by class <span class="highlight-text">grid-50-50</span>.
+          </p>
+          <div class="component-wrapper p-8 my-4">
+            <div class="d-grid grid-50-50 gap-1">
+              <div class="grid-item text-center text-md">Column 1</div>
+              <div class="grid-item text-center text-md">Column 2</div>
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/621122b11cc8b9001542ee7a"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- grid 3 columns -->
+          <p class="headline-md font-wt-bold mt-5">3 column Grid layout</p>
+          <p class="text-sm my-4">
+            If you want to use any container as grid with 3 column layout then
+            first add <span class="highlight-text">grid</span> class to it
+            followed by class <span class="highlight-text">grid-3-column</span>.
+          </p>
+          <div class="component-wrapper p-8 my-4">
+            <div class="d-grid grid-3-column gap-1">
+              <div class="grid-item text-center text-md">Column 1</div>
+              <div class="grid-item text-center text-md">Column 2</div>
+              <div class="grid-item text-center text-md">Column 3</div>
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/621122fe1cc8b9001542ee7b"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+        </section>
+        <hr />
+        <!-- Rating -->
+        <section class="component-container mt-6" id="rating">
+          <h3 class="headline-lg comp-name">Rating</h3>
+          <p class="text-sm"></p>
+          <div class="component-wrapper p-8 my-4">
+            <div class="d-flex flex-wrap justify-around">
+              <div class="rating-container text-md">
+                <input type="checkbox" id="star-1" checked disabled />
+                <label for="star-1" class="fas fa-star rating-checked"></label>
+                <input type="checkbox" id="star-2" checked disabled />
+                <label for="star-2" class="fas fa-star rating-checked"></label>
+                <input type="checkbox" id="star-3" checked disabled />
+                <label for="star-3" class="fas fa-star rating-checked"></label>
+                <input type="checkbox" id="star-4" disabled />
+                <label
+                  for="star-4"
+                  class="fas fa-star rating-unchecked"
+                ></label>
+                <input type="checkbox" id="star-5" disabled />
+                <label
+                  for="star-5"
+                  class="fas fa-star rating-unchecked"
+                ></label>
+              </div>
+
+              <div class="rating-container text-md">
+                <input type="checkbox" id="star-1" checked disabled />
+                <label for="star-1" class="fas fa-star rating-checked"></label>
+                <input type="checkbox" id="star-2" checked disabled />
+                <label for="star-2" class="fas fa-star rating-checked"></label>
+                <input type="checkbox" id="star-3" checked disabled />
+                <label for="star-3" class="fas fa-star rating-checked"></label>
+                <input type="checkbox" id="star-4" disabled />
+                <label for="star-4" class="fas fa-star rating-checked"></label>
+                <input type="checkbox" id="star-5" disabled />
+                <label for="star-5" class="fas fa-star rating-checked"></label>
+              </div>
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/62113af15362a500156c2b03"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+        </section>
+        <hr />
+        <!-- Toast -->
+        <section class="component-container mt-6" id="toast">
+          <h3 class="headline-lg comp-name">Toast</h3>
+          <p class="text-sm my-4">
+            Toasts are basically notification messages that appear on the screen
+            to inform the user about something. They disappear after a few
+            seconds and also they can be closed using close button.
+          </p>
+          <div class="component-wrapper p-8 my-4 d-flex">
+            <!-- toast code to show in UI -->
+            <!-- success toast -->
+            <div
+              style="
+                background-color: var(--success-color);
+                color: var(--white-color);
+              "
+              class="text-sm d-flex align-center p-3 rounded-sm"
+            >
+              Added Successfully !
+              <button type="button" class="btn btn-icon">
+                <i
+                  class="fas fa-times text-md ml-4"
+                  style="color: var(--white-color)"
+                ></i>
+              </button>
+            </div>
+            <!-- error toast -->
+            <div
+              style="
+                background-color: var(--danger-color);
+                color: var(--white-color);
+              "
+              class="text-sm d-flex align-center p-3 rounded-sm ml-8"
+            >
+              Try Again Later !
+              <button type="button" class="btn btn-icon">
+                <i
+                  class="fas fa-times text-md ml-4"
+                  style="color: var(--white-color)"
+                ></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- demo toast code -->
+          <div
+            id="toast-success"
+            class="toast text-sm d-flex align-center p-3 rounded-sm d-none"
+          >
+            Added Successfully !
+            <button type="button" class="btn btn-icon">
+              <i class="fas fa-times text-md btn-toast-close ml-4"></i>
+            </button>
+          </div>
+          <div
+            id="toast-error"
+            class="toast text-sm d-flex align-center p-3 rounded-sm d-none"
+          >
+            Try Again Later !
+            <button type="button" class="btn btn-icon">
+              <i class="fas fa-times text-md btn-toast-close ml-4"></i>
+            </button>
+          </div>
+          <div class="component-wrapper p-8 my-4 d-flex">
+            <button
+              id="success-toast-demo-btn"
+              type="button"
+              class="btn btn-primary rounded-sm text-sm p-3"
+            >
+              Success Toast Demo
+            </button>
+
+            <button
+              id="error-toast-demo-btn"
+              type="button"
+              class="btn btn-primary rounded-sm text-sm p-3 ml-8"
+            >
+              Error Toast Demo
+            </button>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/62114ad75362a500156c2b0c"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <p class="text-sm my-4">Javascript code</p>
+
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/621552a38646a200159b5a80"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+        </section>
+        <hr />
+        <!-- Slider -->
+        <section class="component-container mt-8" id="slider">
+          <h3 class="headline-lg comp-name">Slider</h3>
+          <p class="text-sm my-4">
+            Sliders are used to define a particular range whose exact value is
+            not important. Sliders can be used to control the sound in video
+            player or filer the price in e-com website.
+          </p>
+          <!-- simple slider -->
+          <p class="headline-md font-wt-bold mt-5">Simple Slider</p>
+
+          <p class="text-sm my-4">
+            sliders value can be set using
+            <span class="highlight-text">min</span> and
+            <span class="highlight-text">max</span> attribute of
+            <span class="highlight-text">input</span>
+            element.Also we can read current value of slider using javascript
+          </p>
+          <div class="component-wrapper p-8 my-4">
+            <div class="d-flex align-center">
+              <input
+                type="range"
+                name="slider"
+                class="simple-slider"
+                min="0"
+                max="500"
+                value="200"
+                step="20"
+              />
+            </div>
+            <p id="slider-value" class="text-sm mt-4">You selected 200</p>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/621271465362a500156c2c08"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <p class="text-sm my-4">Javascript code</p>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/6215540d8646a200159b5a81"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- styled slider -->
+          <p class="headline-md font-wt-bold mt-5">Styled Slider</p>
+          <p class="text-sm my-4">We can style slider using css.</p>
+          <div class="component-wrapper p-8 my-4">
+            <div class="d-flex align-center">
+              <input
+                type="range"
+                name="slider"
+                class="styled-slider"
+                min="0"
+                max="500"
+                value="200"
+              />
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/621333ac11c4db00151a7e0f"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- sider with icon -->
+          <p class="headline-md font-wt-bold mt-5">Slider with Icon</p>
+          <div class="component-wrapper p-8 my-4">
+            <div class="d-flex align-center">
+              <label for="icon-slider"
+                ><i class="fas fa-volume-up text-md mr-2"></i
+              ></label>
+              <input
+                type="range"
+                class="icon-slider"
+                name="slider"
+                min="0"
+                max="500"
+                value="250"
+              />
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/621272235362a500156c2c09"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+
+          <!-- disabled slider -->
+          <p class="headline-md font-wt-bold mt-5">disabled Slider</p>
+          <div class="component-wrapper p-8 my-4">
+            <div class="d-flex align-center">
+              <label class="disabled-slider-label" for="disabled-slider"
+                ><i class="fas fa-volume-up text-md mr-2"></i
+              ></label>
+              <input
+                type="range"
+                name="slider"
+                class="disabled-slider"
+                min="0"
+                max="500"
+                value="300"
+                disabled
+              />
+            </div>
+          </div>
+          <iframe
+            loading="lazy"
+            src="https://www.thiscodeworks.com/embed/621272de5362a500156c2c0a"
+            class="code-snippet"
+            frameborder="0"
+          ></iframe>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer text-center p-4">
+      <div class="text-md">Made with ❤️ by Viresh Fegade</div>
+      <ul class="d-flex justify-center align-center">
+        <li class="m-2">
+          <a class="text-md" target="_blank" href="https://github.com/viru2001"
+            ><i class="footer-social-icon fab fa-github"></i
+          ></a>
+        </li>
+        <li class="m-2">
+          <a
+            class="text-md"
+            target="_blank"
+            href="https://twitter.com/fegade_viresh"
+            ><i class="footer-social-icon fab fa-twitter"></i
+          ></a>
+        </li>
+        <li class="m-2">
+          <a
+            class="text-md"
+            target="_blank"
+            href="https://www.linkedin.com/in/viresh-fegade-43a475148/"
+            ><i class="footer-social-icon fab fa-linkedin-in"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+    <script src="../components/Modal/modal.js"></script>
+    <script src="../components/Card/card.js"></script>
+    <script src="../components/Toast/toast.js"></script>
+    <script src="../components/Slider/slider.js"></script>
+    <script src="../components/Navigation/navigation.js"></script>
+    <script src="../js/docs-nav.js"></script>
+  </body>
+</html>

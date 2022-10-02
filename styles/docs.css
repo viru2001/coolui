@@ -1,0 +1,145 @@
+@import "./navbar.css";
+@import "./footer.css";
+
+:root{
+  --text-highlight-bg-color:#E2E7E8;
+}
+.highlight-text{
+  background-color: var(--text-highlight-bg-color) ;
+  color: var(--primary-dark-color);
+  border-radius: 5px;
+  padding: 3px;
+  margin-right: 5px;
+  margin-top: 5px;
+  display: inline-block;
+}
+/* component navigation menu */
+.component-nav {
+  top: 0;
+  height: 100vh;
+  width: 20%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-right: solid 1px var(--secondary-dark-color);
+}
+
+main {
+  width: 80%;
+}
+
+.component-nav ul li {
+  width: 100%;
+  padding: 1rem;
+}
+
+.component-nav-list li:hover {
+  background-color: var(--primary-faint-color);
+  color: var(--primary-color);
+}
+
+.component-nav-list li {
+  margin: 1rem 0;
+}
+
+.comp-nav-link-item {
+  color: inherit;
+  padding: 1rem 12rem;
+}
+
+/* hamburger menu */
+.hamburger-icon {
+  color: var(--primary-color);
+}
+
+#btn-hamburger {
+  display: none;
+}
+
+#nav-menu-hamburger {
+  border-bottom: solid 2px var(--secondary-dark-color);
+  background-color: var(--secondary-faint-color);
+}
+
+.component-nav-hamburg {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* code snippet */
+.code-snippet {
+  width: 100%;
+  border: 0;
+  transform: scale(1);
+  overflow: scroll;
+}
+
+/* component container styles */
+.component-container {
+  margin: 8rem;
+}
+
+.component-wrapper {
+  border: solid 1px var(--secondary-light-color);
+}
+
+.comp-name {
+  color: var(--primary-color);
+}
+
+@media (max-width: 884px) {
+  .component-nav {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  #primary-nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: var(--white-color);
+    width: 100vw;
+    flex-wrap: wrap;
+  }
+
+  .nav-menu-without-hamburger-icon {
+    display: none;
+  }
+
+  #btn-hamburger {
+    display: block;
+  }
+
+  #installation {
+    margin-top: 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .component-container {
+    margin: 5rem;
+  }
+  .component-nav-list li {
+    margin: 2rem 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .component-container {
+    margin: 3rem;
+  }
+  .search-box-hamburg {
+    width: 55vw;
+  }
+  .btn-search-hamburg {
+    right: 5rem;
+  }
+}
+@media (max-width: 370px) {
+  .btn-search-hamburg {
+    right: 6rem;
+  }
+}

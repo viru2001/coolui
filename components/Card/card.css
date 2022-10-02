@@ -1,0 +1,94 @@
+:root {
+  --text-overlay-bg: #00000040;
+  --card-border-color: #c9c9c9;
+}
+.card-wrapper {
+  border: 1px solid var(--card-border-color);
+  background: var(--white-color);
+}
+
+.product-discount {
+  color: var(--success-dark-color);
+}
+.product-original-price {
+  text-decoration: line-through;
+  color: var(--secondary-dark-color);
+  font-size: 1.3rem;
+}
+
+.horizontal-card-btns-wrapper {
+  gap: 1rem;
+}
+.vertical-card-badge {
+  background-color: var(--success-color);
+  color: var(--dark-text-color);
+  top: 2rem;
+}
+.close-icon-wrapper {
+  text-align: right;
+}
+.text-overlay-container {
+  top: 0;
+  background-color: var(--text-overlay-bg);
+}
+.text-overlay {
+  background-color: var(--secondary-dark-color);
+  color: var(--white-color);
+}
+
+.reset-dismissed-card {
+  display: none;
+}
+.product-card {
+  width: 25rem;
+  border: solid 1px var(--card-border-color);
+}
+.card-wrapper:hover {
+  background-color: var(--off-white-color);
+}
+.product-card-img {
+  width: 70%;
+}
+.card-btns-wrapper {
+  gap: 1rem;
+}
+
+.btn-quantity {
+  width: 3rem;
+  height: 3rem;
+}
+.horizontal-card-wrapper {
+  width: 47rem;
+}
+.horizontal-card-img {
+  width: 15rem;
+}
+.cart-product-heading {
+  font-size: 2rem;
+}
+
+@media (max-width: 624px) {
+  .card-wrapper {
+    flex-direction: column;
+  }
+  .cart-action-container {
+    flex-direction: column;
+  }
+  .product-info-wrapper,
+  .quantity-btn-container {
+    margin-left: 2rem;
+  }
+
+}
+@media (max-width:480px) {
+  .horizontal-card-wrapper {
+    width: 90%;
+  }
+}
+@media (max-width: 415px) {
+  .product-info-wrapper,
+  .quantity-btn-container,
+  .btn-remove {
+    margin-left: 1rem;
+  }
+}
